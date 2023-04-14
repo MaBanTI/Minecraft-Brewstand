@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brewstand Simulation</title>
+    <link rel="icon" href="img/BrewingStand.png">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="Ingredients-Fuel">
+        <div class="Fuel" onclick="fuel()">
+            <img src="img/Items/Blaze_Dust_MC.png" width="75" height="75">
+        </div>
+
+        <div class="Ingredients">
+            <img src="img/Darkgray_Placeholder.png" id="Ingredient-Brewing" width="75" height="75">
+        </div>
+
+        
+        <div class="Placeholer"></div>
+    </div>
+
+
+    <div class="Brewing_Progress">
+        <progress class="Fuel_display" id="Fuel_Bar_id" value="" max="100"></progress>
+        <progress class="Brewing_Progress_Bar" id="BrewingBar_id" value="" max="100"></progress>
+        <div class="Progress_Placeholder"></div>
+    </div>
+
+
+    <br>
+
+    <div class="PathToPotion">
+        <div class="verticalBar1"></div>
+
+        <div class="verticalBar2"></div>
+
+        <div class="verticalBar3"></div>
+    </div>
+    <!--
+    <div class="triangles">
+        <div class="downside_triangle1"></div>
+        <div class="downside_triangle2"></div>
+        <div class="downside_triangle3"></div>
+    </div>
+    -->
+
+    <!-- When brewed, the Potions will pop up here -->
+    <div class="Potions">
+        <div class="Potion1">
+            <img id="Potion1" src="img/Darkgray_Placeholder.png" width="75" height="75">
+        </div>
+        <div class="Potion2">
+            <img id="Potion2" src="img/Darkgray_Placeholder.png" width="75" height="75">
+        </div>
+        <div class="Potion3">
+            <img id="Potion3" src="img/Darkgray_Placeholder.png" width="75" height="75">
+        </div>
+    </div>
+
+
+    <div class="Potion_Name">
+        <p id="Potion_Name_ID"></p>
+    </div>
+
+
+    <div class="Inventory">
+        <div class="Glass-Bottle" onclick="GlasBottle()" title="Awkward-Potion">
+            <img src="img/Items/Water_Bottle_MC.png" width="75" height="75">
+        </div>
+
+        <div class="Magmacreme" onclick="Magmacreme()" title="Magmacreme">
+            <img src="img/Items/Magmacreme_MC.png" width="75" height="75">
+        </div>
+
+        <!--
+        <div class="Netherwart" onclick="Netherwart()" title="Netherwart">
+            <img src="img/Items/Netherwart_MC.png" width="75" height="75">
+        </div>
+        -->
+
+        <div class="Ghasttear" onclick="Ghasttear()" title="Ghasttear">
+            <img src="img/Items/Ghasttear_MC.png" width="75" height="75">
+        </div>
+
+        <div class="Glistering-Melon" onclick="GlisteringMelon()" title="Glistering-Melon">
+            <img src="img/Items/Glistering_Melon_MC.png" width="75" height="75">
+        </div>
+
+        <div class="Blazedust" onclick="Blazedust()" title="Blazedust">
+            <img src="img/Items/Blaze_Dust_MC.png" width="75" height="75">
+        </div>
+
+        <div class="Spider_Eye" onclick="Spidereye()" title="Spider Eye">
+            <img src="img/Items/Spider_Eye_MC.png" width="75" height="75">
+        </div>
+
+        <div class="Sugar" onclick="Sugar()" title="Sugar">
+            <img src="img/Items/Sugar_MC.png" width="75" height="75">
+        </div>
+
+        <!--
+        <div class="Glowstone-Dust" onclick="GlowstoneDust()" title="Glowstone-Dust">
+            <img src="img/Items/Glowstone_Dust_MC.png" width="75" height="75">
+        </div>
+        -->
+    </div>
+</body>
+
+</html>
